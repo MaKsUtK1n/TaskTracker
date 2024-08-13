@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker</title>
+    <link rel="shortcut icon" href="https://i.postimg.cc/vBfx0cJt/1.png">
+    <style>
+        body {
+            align-items: center;
+            text-align: center;
+            background-color: [0];
+            margin: 0;
+            align-content: center;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: grid;
+        }
+        #maincont {
+            align-items: center;
+            text-align: center;
+            align-content: center;
+            margin: 0;
+        }
+        input {
+            padding: 10px;
+            border: 1px solid [0];
+            border-radius: 4px;
+        }
+        button {
+    padding: 10px;
+    background-color: [1];
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+button:hover {
+    background-color: [2];
+}
+    </style>
+</head>
+<body>
+    <div id="maincont">
+        <form action="/ct" method="get">
+            <br> <br> <br> <br> <br>
+            <h2>Создание задачи</h2>
+            <input name="shortname" type="text" placeholder="Название" required> <br> <br>
+            <input name="desc" type="text" placeholder="Описание" required> <br> <br>
+            <input type="date" name="expires_in_date" required> <input type="time" name="expires_in_min" required> <br><br><br>
+            <button type="submit">Создать задачу</button> <button onclick="window.location.href='/tasks'">Назад</button>          
+        </form>
+    </div>
+</body>

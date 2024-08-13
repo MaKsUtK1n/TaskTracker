@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker</title>
+    <link rel="shortcut icon" href="https://i.postimg.cc/vBfx0cJt/1.png">
+    <style>
+        body {
+            align-items: center;
+            text-align: center;
+            background-color: [0];
+            margin: 0;
+            align-content: center;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: grid;
+        }
+        #maincont {
+            align-items: center;
+            text-align: center;
+            align-content: center;
+            margin: 0;
+        }
+.button {
+    padding: 10px;
+    background-color: [1];
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.button:hover {
+    background-color: [2];
+}
+.circle {
+    width: 9vw;
+    height: 18vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.175);
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    transition: 0.5s all;
+    margin-left: 8vw;
+    margin-right: 8vw;
+}
+.circle:hover {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.588);
+}
+#theme1 {
+    background: linear-gradient(45deg, #00a9a5 0, #00a9a5 50%, #0b5351 50%, #0b5351 70%, #092327 70%, #092327 100%);
+}
+#theme2 {
+    background: linear-gradient(45deg, #f8f7ff 0, #f8f7ff 50%, #b8b8ff 50%, #b8b8ff 70%, #9381ff 70%, #9381ff 100%);
+}
+#theme3 {
+    background: linear-gradient(45deg, #edf6f9 0, #edf6f9 50%, #83c5be 50%, #83c5be 70%, #006d77 70%, #006d77 100%);
+}
+#theme4 {
+    background: linear-gradient(45deg, #edf2f4 0, #edf2f4 50%, #8d99ae 50%, #8d99ae 70%, #2b2d42 70%, #2b2d42 100%);
+}
+    </style>    
+</head>
+<body>
+    <div id="maincont">
+        <h2>Выберите тему</h2>
+        <br><br><br><br>
+        <button class="circle" id="theme1" onclick="window.location.href = '/set_theme/1'"></button>
+        <button class="circle" id="theme2" onclick="window.location.href = '/set_theme/2'"></button><br><br><br><br><br><br><br><br>
+        <button class="circle" id="theme3" onclick="window.location.href = '/set_theme/3'"></button>
+        <button class="circle" id="theme4" onclick="window.location.href = '/set_theme/4'"></button><br><br><br>
+        <button class="button" onclick="window.location.href='/tasks'">Назад</button> 
+        <button class="button" onclick="window.location.href='/set_theme/0'">Сбросить тему</button>
+    </div>
+</body>
